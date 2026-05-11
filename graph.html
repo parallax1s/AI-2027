@@ -7,7 +7,7 @@
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="expires" content="0" />
     <title>METR 80% Success Rate Graph</title>
-    <link rel="stylesheet" href="./graph.css?v=20260511-12" />
+    <link rel="stylesheet" href="./graph.css?v=20260511-13" />
   </head>
   <body>
     <main>
@@ -28,6 +28,10 @@
           <label>
             Point size
             <input id="pointSize" type="range" min="8" max="34" step="1" value="18" />
+          </label>
+          <label>
+            <input id="pointLabelsToggle" type="checkbox" checked />
+            Labels
           </label>
           <label>
             <input id="curvesToggle" type="checkbox" checked />
@@ -71,7 +75,7 @@
       <section class="graph-wrap" aria-label="METR graph">
         <img
           class="graph-image"
-          src="./new-metr-extended-nowatermark-inexpandable.png?v=20260511-12"
+          src="./new-metr-extended-nowatermark-inexpandable.png?v=20260511-13"
           alt="Length of coding tasks AI agents can complete autonomously, with model release date on the x-axis and human task time at 80% success rate on the y-axis."
         />
         <svg id="overlay" class="overlay" viewBox="0 0 2498 1774" aria-label="Interactive METR 80% success-rate data overlay"></svg>
@@ -96,7 +100,7 @@
       </section>
     </main>
 
-    <script src="./data.js?v=20260511-12"></script>
-    <script src="./graph.js?v=20260511-12"></script>
+    <script src="./data.js?v=20260511-13"></script>
+    <script src="./graph.js?v=20260511-13"></script>
   </body>
 </html>

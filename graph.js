@@ -9,6 +9,7 @@
   const backgroundToggle = document.getElementById("backgroundToggle");
   const backgroundOpacity = document.getElementById("backgroundOpacity");
   const pointSize = document.getElementById("pointSize");
+  const pointLabelsToggle = document.getElementById("pointLabelsToggle");
   const curvesToggle = document.getElementById("curvesToggle");
   const curveSmoothToggle = document.getElementById("curveSmoothToggle");
   const curveOpacity = document.getElementById("curveOpacity");
@@ -50,6 +51,7 @@
 
   if (params.has("curves")) curvesToggle.checked = params.get("curves") !== "0";
   if (params.has("smooth")) curveSmoothToggle.checked = params.get("smooth") !== "0";
+  if (params.has("labels")) pointLabelsToggle.checked = params.get("labels") !== "0";
 
   if (params.has("curveOpacity")) {
     curveOpacity.value = String(clamp(Number(params.get("curveOpacity")), 0, 1));
@@ -570,6 +572,7 @@
   }
 
   function shouldDrawPointLabel(point, y) {
+    if (!pointLabelsToggle.checked) return false;
     if (!point.showLabel) return false;
     return getYScaleMode() !== "linear" || y < chart.bottom - 80;
   }
@@ -697,6 +700,7 @@
   doublingInterceptUp.addEventListener("click", () => nudgeDoublingIntercept(1));
   linearTopCutoff.addEventListener("input", renderOverlay);
   yScaleMode.addEventListener("change", renderOverlay);
+  pointLabelsToggle.addEventListener("change", renderOverlay);
   pointSize.addEventListener("input", renderOverlay);
   renderOverlay();
 })();

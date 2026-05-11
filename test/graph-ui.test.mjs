@@ -5,6 +5,7 @@ const html = fs.readFileSync(new URL("../graph.html", import.meta.url), "utf8");
 const js = fs.readFileSync(new URL("../graph.js", import.meta.url), "utf8");
 
 assert.match(html, /id="customDoublingDays"/, "HTML should expose an adjustable doubling-days input");
+assert.match(html, /id="pointLabelsToggle"/, "HTML should expose a model-label visibility toggle");
 assert.match(html, /id="customDoublingIntercept"/, "HTML should expose the 101-day curve intercept offset input");
 assert.match(html, /id="customDoublingIntercept"[^>]*value="0\.75"/, "101-day curve intercept should default to +0.75 doublings");
 assert.match(html, /id="doublingInterceptDown"/, "HTML should expose a minus button for 101-day curve intercept");
@@ -24,9 +25,11 @@ assert.match(js, /doublingInterceptUp/, "graph code should wire the intercept pl
 assert.match(js, /adjustable-doubling/, "graph code should update the adjustable doubling curve");
 
 assert.match(js, /pointToggleInputs/, "graph code should keep per-point toggle state");
+assert.match(js, /pointLabelsToggle/, "graph code should read the model-label visibility toggle");
 assert.match(js, /Toggle \$\{point\.label\}/, "each model row should expose a point toggle control");
 assert.match(js, /data-point/, "rendered point groups should carry point IDs for visibility toggles");
 assert.match(js, /hidePoints/, "point visibility should be configurable from URL state");
+assert.match(js, /params\.has\("labels"\)/, "model-label visibility should be configurable from URL state");
 assert.match(js, /yScaleSource/, "graph code should retain source-aligned y-scale math");
 assert.match(js, /yScaleLog/, "graph code should support true log y-scale math");
 assert.match(js, /yScaleLinear/, "graph code should support linear y-scale math");
