@@ -1,3 +1,4 @@
+<img width="1588" height="952" alt="2026-05-11_17-00-35" src="https://github.com/user-attachments/assets/9ca2176d-a562-4b47-b2ba-7c01d23b959f" />
 # METR 80% Time Horizon Interactive Graph
 
 Open `graph.html` in a browser to view the interactive recreation. `index.html` redirects to it.
