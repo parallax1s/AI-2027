@@ -1,0 +1,10 @@
+.DS_Store
+
+# Older local prototype not used by graph.html.
+/app.js
+/style.css
+
+# Keep only final verification screenshots in the public repo.
+/screenshots/*
+!/screenshots/graph-v12-log-default-075.png
+!/screenshots/graph-v12-linear-default-8h.png

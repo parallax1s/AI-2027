@@ -1,0 +1,11 @@
+# METR 80% Time Horizon Interactive Graph
+
+Open `graph.html` in a browser to view the interactive recreation. `index.html` redirects to it.
+
+Use `graph.html?bg=0` to open with the reference PNG hidden.
+
+The page uses the supplied `new-metr-extended-nowatermark-inexpandable.png` as a reference background. The controls can hide or fade the background image; the vector overlay keeps axes, points, and curve overlays visible. Each curve has its own on/off control, and the data table gives every model point its own on/off toggle. The smooth toggle switches digitized source curves between monotone-smoothed and point-interpolated paths, the doubling-days input adjusts the 101-day exponential comparison curve, the 101d y buttons shift that curve's log-space intercept, and the y-scale selector switches between source-image alignment, true log scale, and linear scale. The 101-day curve now defaults to a `+0.75` doubling y offset.
+
+The default overlay y-axis uses an equal-spaced labeled log scale to match the supplied PNG's tick geometry. It pins `5 years` to the top gridline, places `8 sec` above the bottom axis, and interpolates logarithmically between neighboring displayed tick labels. Because the source tick labels are evenly spaced while their time ratios are not constant, exponential curves can bend at tick-band boundaries in this original-aligned mode; switch to `Log` for mathematically straight exponential/doubling curves. `Linear` uses an adjustable top cutoff, defaulting to `8 hrs`, so the lower area remains inspectable.
+
+Data points are in `data/metr-80-points.json` and duplicated in `data.js` for the standalone page. METR measurements use the current public `METR-Horizon-v1.1` `p80_horizon_length` estimates from `https://metr.org/assets/benchmark_results_1_1.yaml`, including Claude Mythos Preview (early). The black exponential line is the 7-month doubling baseline from the supplied image, and the cyan exponential line defaults to 101-day doubling but is adjustable. The gray, red, orange, and purple forecast curves are source-image point series digitized from `new-metr-extended-nowatermark-inexpandable.png`; the public page describes them as central sampled trajectories, but does not expose the underlying sampled arrays.

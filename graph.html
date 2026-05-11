@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="cache-control" content="no-store" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <title>METR 80% Success Rate Graph</title>
+    <link rel="stylesheet" href="./graph.css?v=20260511-12" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>METR 80% Success Rate Graph</h1>
+          <p>Reference graph with interactive 80% success-rate points and data-generated curve overlays.</p>
+        </div>
+        <div class="controls" aria-label="Graph controls">
+          <label>
+            <input id="backgroundToggle" type="checkbox" checked />
+            Background
+          </label>
+          <label>
+            Image opacity
+            <input id="backgroundOpacity" type="range" min="0" max="1" step="0.02" value="1" />
+          </label>
+          <label>
+            Point size
+            <input id="pointSize" type="range" min="8" max="34" step="1" value="18" />
+          </label>
+          <label>
+            <input id="curvesToggle" type="checkbox" checked />
+            Curves
+          </label>
+          <label>
+            <input id="curveSmoothToggle" type="checkbox" checked />
+            Smooth
+          </label>
+          <label>
+            Curve opacity
+            <input id="curveOpacity" type="range" min="0" max="1" step="0.02" value="1" />
+          </label>
+          <label>
+            Doubling days
+            <input id="customDoublingDays" class="number-input" type="number" min="14" max="730" step="1" value="101" />
+          </label>
+          <label class="stepper-control">
+            101d y
+            <button id="doublingInterceptDown" class="stepper-button" type="button" aria-label="Lower 101-day curve intercept">-</button>
+            <input id="customDoublingIntercept" class="offset-input" type="number" min="-8" max="8" step="0.25" value="0.75" />
+            <button id="doublingInterceptUp" class="stepper-button" type="button" aria-label="Raise 101-day curve intercept">+</button>
+          </label>
+          <label class="linear-top-control">
+            Linear top
+            <span id="linearTopValue" class="inline-value">8 hrs</span>
+            <input id="linearTopCutoff" type="range" min="3" max="15.418" step="0.05" value="8.9069" />
+          </label>
+          <label>
+            Y scale
+            <select id="yScaleMode" class="select-input">
+              <option value="source">Original</option>
+              <option value="log">Log</option>
+              <option value="linear">Linear</option>
+            </select>
+          </label>
+          <div id="curveToggles" class="curve-toggles" aria-label="Individual curve controls"></div>
+        </div>
+      </header>
+
+      <section class="graph-wrap" aria-label="METR graph">
+        <img
+          class="graph-image"
+          src="./new-metr-extended-nowatermark-inexpandable.png?v=20260511-12"
+          alt="Length of coding tasks AI agents can complete autonomously, with model release date on the x-axis and human task time at 80% success rate on the y-axis."
+        />
+        <svg id="overlay" class="overlay" viewBox="0 0 2498 1774" aria-label="Interactive METR 80% success-rate data overlay"></svg>
+        <div id="graphTooltip" class="tooltip"></div>
+      </section>
+
+      <section class="data-table">
+        <h2>80% Success-Rate Data Points</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>On/off</th>
+              <th>Model</th>
+              <th>Lab</th>
+              <th>Release</th>
+              <th>80% horizon</th>
+              <th>p80 frontier</th>
+            </tr>
+          </thead>
+          <tbody id="graphDataTable"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="./data.js?v=20260511-12"></script>
+    <script src="./graph.js?v=20260511-12"></script>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+{
+  "metric": "Task-completion time horizon at 80% success rate",
+  "unit": "minutes of human task time",
+  "source": {
+    "label": "METR p80 frontier fit",
+    "sourceUrl": "https://metr.org/assets/benchmark_results_1_1.yaml",
+    "sourceField": "frontierP80",
+    "metric": "p80_horizon_length.estimate",
+    "benchmark": "METR-Horizon-v1.1",
+    "pageUpdated": "2026-05-08"
+  },
+  "points": [
+    {
+      "model": "GPT-2",
+      "lab": "OpenAI",
+      "releaseDate": "2019-02-14",
+      "minutes": 0.0128,
+      "horizon": "1 sec",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "GPT-3",
+      "lab": "OpenAI",
+      "releaseDate": "2020-05-28",
+      "minutes": 0.056238,
+      "horizon": "3 sec",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "GPT-3.5",
+      "lab": "OpenAI",
+      "releaseDate": "2022-03-15",
+      "minutes": 0.25538,
+      "horizon": "15 sec",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "GPT-4",
+      "lab": "OpenAI",
+      "releaseDate": "2023-03-14",
+      "minutes": 0.889561,
+      "horizon": "53 sec",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "GPT-4 Nov '23",
+      "lab": "OpenAI",
+      "releaseDate": "2023-11-06",
+      "minutes": 0.783032,
+      "horizon": "47 sec",
+      "frontierP80": false,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "Claude 3 Opus",
+      "lab": "Anthropic",
+      "releaseDate": "2024-03-04",
+      "minutes": 0.638973,
+      "horizon": "38 sec",
+      "frontierP80": false,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "GPT-4 Turbo",
+      "lab": "OpenAI",
+      "releaseDate": "2024-04-09",
+      "minutes": 0.927933,
+      "horizon": "56 sec",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "GPT-4o",
+      "lab": "OpenAI",
+      "releaseDate": "2024-05-13",
+      "minutes": 1.267009,
+      "horizon": "1.3 min",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "Claude 3.5 Sonnet (Old)",
+      "lab": "Anthropic",
+      "releaseDate": "2024-06-20",
+      "minutes": 1.671757,
+      "horizon": "1.7 min",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "o1-preview",
+      "lab": "OpenAI",
+      "releaseDate": "2024-09-12",
+      "minutes": 4.420545,
+      "horizon": "4.4 min",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "Claude 3.5 Sonnet (New)",
+      "lab": "Anthropic",
+      "releaseDate": "2024-10-22",
+      "minutes": 2.595677,
+      "horizon": "2.6 min",
+      "frontierP80": false,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "o1",
+      "lab": "OpenAI",
+      "releaseDate": "2024-12-05",
+      "minutes": 7.090121,
+      "horizon": "7.1 min",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "Claude 3.7 Sonnet",
+      "lab": "Anthropic",
+      "releaseDate": "2025-02-24",
+      "minutes": 12.09179,
+      "horizon": "12.1 min",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "o3",
+      "lab": "OpenAI",
+      "releaseDate": "2025-04-16",
+      "minutes": 29.981603,
+      "horizon": "30 min",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "Claude Opus 4",
+      "lab": "Anthropic",
+      "releaseDate": "2025-05-22",
+      "minutes": 20.429752,
+      "horizon": "20.4 min",
+      "frontierP80": false,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "Claude Opus 4.1",
+      "lab": "Anthropic",
+      "releaseDate": "2025-08-05",
+      "minutes": 23.455761,
+      "horizon": "23.5 min",
+      "frontierP80": false,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "GPT-5",
+      "lab": "OpenAI",
+      "releaseDate": "2025-08-07",
+      "minutes": 38.312431,
+      "horizon": "38.3 min",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "Gemini 3 Pro",
+      "lab": "Google",
+      "releaseDate": "2025-11-18",
+      "minutes": 54.142849,
+      "horizon": "54.1 min",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "GPT-5.1-Codex-Max",
+      "lab": "OpenAI",
+      "releaseDate": "2025-11-19",
+      "minutes": 50.632499,
+      "horizon": "50.6 min",
+      "frontierP80": false,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "Claude Opus 4.5",
+      "lab": "Anthropic",
+      "releaseDate": "2025-11-24",
+      "minutes": 49.430584,
+      "horizon": "49.4 min",
+      "frontierP80": false,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "GPT-5.2 (high)",
+      "lab": "OpenAI",
+      "releaseDate": "2025-12-11",
+      "minutes": 66.002649,
+      "horizon": "1.1 hrs",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "Claude Opus 4.6",
+      "lab": "Anthropic",
+      "releaseDate": "2026-02-05",
+      "minutes": 69.874587,
+      "horizon": "1.2 hrs",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "GPT-5.3-Codex (high)",
+      "lab": "OpenAI",
+      "releaseDate": "2026-02-05",
+      "minutes": 54.739407,
+      "horizon": "54.7 min",
+      "frontierP80": false,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "Gemini 3.1 Pro",
+      "lab": "Google",
+      "releaseDate": "2026-02-19",
+      "minutes": 89.801503,
+      "horizon": "1.5 hrs",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "GPT-5.4 (xhigh)",
+      "lab": "OpenAI",
+      "releaseDate": "2026-03-05",
+      "minutes": 53.877851,
+      "horizon": "53.9 min",
+      "frontierP80": false,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    },
+    {
+      "model": "Claude Mythos Preview (early)",
+      "lab": "Anthropic",
+      "releaseDate": "2026-04-07",
+      "minutes": 185.911829,
+      "horizon": "3.1 hrs",
+      "frontierP80": true,
+      "sourceNote": "METR-Horizon-v1.1 benchmark_results_1_1.yaml, p80_horizon_length estimate."
+    }
+  ],
+  "references": [
+    "https://metr.org/time-horizons/",
+    "https://metr.org/assets/benchmark_results_1_1.yaml",
+    "https://metr.org/evaluations/gpt-5-1-codex-max-report/",
+    "https://github.com/METR/eval-analysis-public",
+    "https://www.alignmentforum.org/posts/ggqSg7bSLChanfunf/forecasting-time-to-automated-superhuman-coders-ai-2027"
+  ]
+}
